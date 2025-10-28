@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main(){
+int x = 4;
+float y = 30
+if(x > y){
+printf("Sum = %d",x+y)
+}
+}
