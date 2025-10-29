@@ -6,27 +6,7 @@ A small collection of C programs for basic compiler construction labs:
 - srp.c — shift-reduce parsing demo (a, b, c as identifiers)
 - fnf.c — FIRST and FOLLOW set calculator
 
-## Build
 
-Windows (MSYS2 UCRT64):
-```bash
-cd "/mnt/d/CODING/random/compiler lab"   # from WSL; or use MSYS shell with /d/...
-gcc -std=c11 -Wall -Wextra -O2 la.c  -o la
-gcc -std=c11 -Wall -Wextra -O2 rdp.c -o rdp
-gcc -std=c11 -Wall -Wextra -O2 srp.c -o srp
-gcc -std=c11 -Wall -Wextra -O2 fnf.c -o fnf
-```
-
-WSL/Linux:
-```bash
-cd "/mnt/d/CODING/random/compiler lab"
-gcc -std=c11 -Wall -Wextra -O2 la.c  -o la
-# ...same for the others as above
-```
-
-Notes:
-- Do not link with -mwindows; these are console apps. If you see “undefined reference to WinMain”, rebuild without GUI flags.
-- Quote paths that contain spaces.
 
 ## Run
 ```bash
